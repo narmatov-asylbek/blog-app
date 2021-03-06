@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Post details{% endblock title %}
+
+{% block content %}
+    <div class="post-entry">
+    <h2><a href="">{{object.title}}</a></h2>
+    <p>{{object.ebody}}</p>
+    </div>
+
+{% endblock content %}

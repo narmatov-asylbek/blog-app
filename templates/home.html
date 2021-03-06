@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog app{% endblock title %}
+
+{% block content %}
+    {% for post in post_list %}
+        <div class="post-entry">
+            <h2><a href="{% url 'post_details' post.pk %}">{{post.title}}</a></h2>
+            <p>{{ post.ebody }}</p>
+        </div>
+    {% endfor %}
+    
+
+{% endblock content %}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #050505;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #999;
+    justify-content: center;
+}
+.header a {
+    font-size: 2rem;
+    color: royalblue;
+}
+
+.post-entry {
+    margin-bottom: 2rem;
+}
+.post-entry h2 {
+    margin: 0.5rem 0;
+}
+.post-entry a {
+    color: rgb(8, 107, 153);
+
+}
+.post-entry a:hover {color: #a4a4a4;}
+    
+
