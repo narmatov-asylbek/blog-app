@@ -4,8 +4,9 @@
 
 {% block content %}
     <div class="post-entry">
-    <h2><a href="">{{object.title}}</a></h2>
-    <p>{{object.ebody}}</p>
+        <h2><a href="">{{object.title}}</a></h2>
+        <p>{{object.ebody}}</p>
     </div>
-
+    <a href="{% url 'post_edit' post.pk %}">Edit post</a>
+    <a href="{% url 'delete_post' post.pk %}">Delete post</a>
 {% endblock content %}

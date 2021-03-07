@@ -21,11 +21,29 @@ a {
     display: flex;
     margin-bottom: 2rem;
     border-bottom: 1px solid #999;
-    justify-content: center;
+    justify-content: space-between;
 }
 .header a {
     font-size: 2rem;
     color: royalblue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.nav-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+}
+.nav-right a {
+    font-size: 1.2rem;
+    color:cadetblue;
 }
 
 .post-entry {

@@ -7,12 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/base.css'%}">
-    <title>{% block title %}{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}| Blog</title>
 </head>
 <body>
     <header class="header">
-        <a href="{% url 'home'%}">Blog app</a>
+        <div class="nav-left">
+            <a href="{% url 'home'%}">Blog app</a>
+        </div>
+        <div class="nav-right">
+            <a href="{% url 'new_post' %}">Create a new post</a>
+        </div>
     </header>
+    {% if user.is_authenticated %}
+    <h2>Welcome , {{user.username}}</h2>
+    <a href="{% url 'logout' %}">Log out</a>
+    {% else %}
+    <h2>You are not logged in</h2>
+    <a href="{% url 'login' %}">Please log in</a>
+    {% endif %}
     
     {% block content %}
     
